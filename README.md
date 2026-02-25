@@ -1,3 +1,2 @@
 # velzaar
-
-A new Flutter project.
+A restaurant app
