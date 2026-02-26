@@ -40,7 +40,8 @@ class AppSizes {
   //Border radius
   static const double borderRadiusSm = 4.0;
   static const double borderRadiusMd = 8.0;
-  static const double borderRadiusLg = 12.0;
+  static const double borderRadiusLg = 16.0;
+  static const double borderRadiusXl = 32.0;
 
   //Divider Height
   static const double dividerHeight = 1.0;

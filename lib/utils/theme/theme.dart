@@ -11,14 +11,25 @@ import "../theme/text.theme.dart";
 import "../theme/card.theme.dart";
 
 class AppTheme {
-  AppTheme._(); // Private constructor and will not be called again and again
+  AppTheme._();
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.light,
     primaryColor: AppColors.primary,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: AppColors.bgLight,
+
+    colorScheme: ColorScheme.light(
+      primary: AppColors.primary,
+      secondary: AppColors.accent,
+      surface: AppColors.lightContainer,
+      error: AppColors.error,
+      onPrimary: Colors.white,
+      onSecondary: Colors.black,
+      onSurface: AppColors.textPrimary,
+    ),
+
     textTheme: AppTextTheme.lightTextTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonTheme,
     appBarTheme: CustomAppBarTheme.lightAppBarTheme,
@@ -29,12 +40,24 @@ class AppTheme {
     inputDecorationTheme: AppTextFieldTheme.lightInputDecorationTheme,
     cardTheme: AppCardTheme.lightCardTheme,
   );
+
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
     primaryColor: AppColors.primary,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: AppColors.bgDark,
+
+    colorScheme: ColorScheme.dark(
+      primary: AppColors.primary,
+      secondary: AppColors.accent,
+      surface: AppColors.darkContainer,
+      error: AppColors.error,
+      onPrimary: Colors.white,
+      onSecondary: Colors.black,
+      onSurface: AppColors.textAccent,
+    ),
+
     textTheme: AppTextTheme.darkTextTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.darkElevatedButtonTheme,
     appBarTheme: CustomAppBarTheme.darkAppBarTheme,

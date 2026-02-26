@@ -25,7 +25,7 @@ class BannerSliderDotNavigation extends StatelessWidget {
             dotHeight: 6.0,
             dotWidth: AppSizes.defaultSpace,
             dotColor: DeviceUtils.isDarkMode
-                ? AppColors.darkerGrey
+                ? AppColors.dark
                 : AppColors.dark.withValues(alpha: 0.5),
           ),
         ),

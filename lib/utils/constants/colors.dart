@@ -4,81 +4,68 @@ class AppColors {
   AppColors._();
 
   // =========================================================
-  // BRAND COLORS (From your new Emerald Design System)
+  // BRAND COLORS (VELZAAR LUXURY PALETTE)
   // =========================================================
-  static const Color primary = Color(0xFF2ECC71);      // Vibrant Emerald
-  static const Color secondary = Color(0xFF1B4332);    // Forest Green
-  static const Color accent = Color(0xFF1ED760);       // Neon Green Accent
-
-  // =========================================================
-  // GRADIENT COLORS (Updated to Emerald Style)
-  // =========================================================
-  static const Gradient linearGradient = LinearGradient(
-    begin: Alignment(0.0, 0.0),
-    end: Alignment(0.5, -0.5),
-    colors: [
-      Color(0xFF2ECC71),
-      Color(0xFF1ED760),
-      Color(0xFF1B4332),
-    ],
-  );
+  static const Color primary = Color(0xFF7B1E2B); // Royal Burgundy
+  static const Color secondary = Color(0xFF1A1A1A); // Matte Black
+  static const Color accent = Color(0xFFC9A227); // Metallic Gold
+  static const Color primaryLight = Color(0xFFB71C1C);
 
   // =========================================================
   // TEXT COLORS
   // =========================================================
-  static const Color textPrimary = Color(0xFF0B3D2E);   // Dark Forest
-  static const Color textSecondary = Color(0xFF52796F); // Muted Sage
-  static const Color textAccent = Colors.white;
+  static const Color textPrimary = Color(0xFF1A1A1A); // Rich Black
+  static const Color textSecondary = Color(0xFF6D6D6D); // Neutral Grey
+  static const Color textAccent = Color(0xFFE6D3A3); // Soft Gold
 
   // =========================================================
   // BACKGROUND COLORS
   // =========================================================
   static const Color white = Color(0xFFFFFFFF);
-  static const Color light = Color(0xFFF8F9FA);          // Off White
-  static const Color dark = Color(0xFF022C22);           // Deep Emerald
+  static const Color light = Color(0xFFF5E9DA); // Warm Cream
+  static const Color dark = Color(0xFF121212); // Deep Black
 
-  static const Color bgLight = Color(0xFFF8F9FA);
-  static const Color bgDark = Color(0xFF022C22);
+  static const Color bgLight = Color(0xFFF5E9DA);
+  static const Color bgDark = Color(0xFF121212);
 
-  static const Color bgPrimary = Color(0xFF2ECC71);
-  static const Color bgSecondary = Color(0xFF1B4332);
+  static const Color bgPrimary = primary;
+  static const Color bgSecondary = secondary;
 
   // =========================================================
   // CONTAINER COLORS
   // =========================================================
   static const Color lightContainer = Color(0xFFFFFFFF);
-  static const Color darkContainer = Color(0xFF064E3B);
+  static const Color darkContainer = Color(0xFF5A1420); // Deep Wine
 
   // =========================================================
   // BUTTON COLORS
   // =========================================================
-  static const Color btnPrimary = Color(0xFF2ECC71);
-  static const Color btnSecondary = Color(0xFF1B4332);
-  static const Color btnDisabled = Color(0xFFBDC3C7);
+  static const Color btnPrimary = primary;
+  static const Color btnSecondary = accent;
+  static const Color btnDisabled = Color(0xFF9E9E9E);
 
   // =========================================================
   // BORDER COLORS
   // =========================================================
-  static const Color borderPrimary = Color(0xFFE5E7EB);  // Soft Grey
-  static const Color borderSecondary = Color(0xFF0F3D33); // Dark Emerald Border
+  static const Color borderPrimary = Color(0xFFE0D6C3);
+  static const Color borderSecondary = Color(0xFF3A3A3A);
 
   // =========================================================
   // STATUS COLORS
   // =========================================================
   static const Color error = Color(0xFFD4183D);
-  static const Color success = Color(0xFF2ECC71);
+  static const Color success = Color(0xFF2E7D32);
   static const Color warning = Color(0xFFF79E1B);
-  static const Color info = Color(0xFF2CB6E7);
+  static const Color info = Color(0xFF1976D2);
 
   // =========================================================
   // NEUTRAL SHADES
   // =========================================================
   static const Color black = Color(0xFF000000);
-  static const Color darkGrey = Color(0xFF52796F);
-  static const Color darkerGrey = Color(0xFF95B8B1);
-  static const Color grey = Color(0xFFE5E7EB);
+  static const Color darkGrey = Color(0xFF6D6D6D);
+  static const Color grey = Color(0xFFE0D6C3);
 
   /// Card colors
-  static const Color cardLight = Color(0xFFF5F5F5);
-  static const Color cardDark = Color(0xFF064E3B);
+  static const Color cardLight = Color(0xFFFFFFFF);
+  static const Color cardDark = Color(0xFF5A1420);
 }

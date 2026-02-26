@@ -21,7 +21,7 @@ class AppSearchBar extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: AppSizes.md),
         decoration: BoxDecoration(
           color: DeviceUtils.isDarkMode
-              ? AppColors.darkerGrey
+              ? AppColors.dark
               : AppColors.light,
           borderRadius: BorderRadius.circular(AppSizes.borderRadiusLg),
           boxShadow: AppShadow.searchBarShadow,

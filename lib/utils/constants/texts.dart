@@ -1,15 +1,21 @@
 class AppTexts {
+  AppTexts._();
+
+  /// App details
+  static const appName = "Velzaar";
+  static const appSlogan = "A Grand Indian Experience";
+
   //----- OnBoarding Texts
-  static const String onBoardingTitle1 = "Welcome to Deshi Bazaar";
-  static const String onBoardingTitle2 = "Shop everything you love!";
-  static const String onBoardingTitle3 = "Fast & reliable delivery.";
+  static const String onBoardingTitle1 = "Discover Royal Flavors";
+  static const String onBoardingTitle2 = "Reserve With Ease";
+  static const String onBoardingTitle3 = "Premium Service";
 
   static const String onBoardingSubTitle1 =
-      "Change sub title for onboarding animation 1.";
+      "Experience authentic Indian cuisine crafted with tradition and elegance.";
   static const String onBoardingSubTitle2 =
-      "Change sub title for onboarding animation 2.";
+      "Book your table instantly and enjoy a grand dining experience.";
   static const String onBoardingSubTitle3 =
-      "Change sub title for onboarding animation 3.";
+      "Exceptional hospitality delivered with perfection.";
 
   /// ----- COMMON TEXTS -----
   static const String submit = 'Submit';
@@ -41,9 +47,11 @@ class AppTexts {
   static const String checkout = "Checkout";
   static const String buyNow = "Buy Now";
   static const String variation = "Variation";
+  static const String skip = "Skip";
+  static const String next = "Next";
+  static const String getStarted = "Get Started";
 
   /// Login screen
-  static const String loginTitle = "Deshi Bazaar";
   static const String loginSubTitle =
       "Login to Access exclusive deals and Simplify your shopping.";
   static const String email = 'Email';

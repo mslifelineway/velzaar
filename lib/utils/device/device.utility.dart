@@ -31,6 +31,10 @@ class DeviceUtils {
     );
   }
 
+  static Size getScreenSize() {
+    return MediaQuery.of(Get.context!).size;
+  }
+
   static double getScreenHeight() {
     return MediaQuery.of(Get.context!).size.height;
   }
