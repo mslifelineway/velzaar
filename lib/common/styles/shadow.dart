@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/constants/colors.dart';
-
 class AppShadow {
   AppShadow._();
 
   /// Shadow for the search bar
   static List<BoxShadow> searchBarShadow = [
     BoxShadow(
-      color: AppColors.dark.withValues(alpha: 0.1),
-      blurRadius: 2.0,
-      spreadRadius: 4.0,
+      color: Colors.black.withValues(alpha: 0.05),
+      blurRadius: 15,
+      offset: const Offset(0, 6),
     ),
   ];
 

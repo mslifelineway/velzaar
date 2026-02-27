@@ -1,10 +1,6 @@
 class AppTexts {
   AppTexts._();
 
-  /// App details
-  static const appName = "Velzaar";
-  static const appSlogan = "A Grand Indian Experience";
-
   //----- OnBoarding Texts
   static const String onBoardingTitle1 = "Discover Royal Flavors";
   static const String onBoardingTitle2 = "Reserve With Ease";
@@ -25,7 +21,7 @@ class AppTexts {
   static const String store = 'Store';
   static const String wishlist = 'Wishlist';
   static const String profile = 'Profile';
-  static const String searchProducts = 'Search your products';
+  static const String search = 'Search';
   static const String products = 'Products';
   static const String testDiscountValue = '20% OFF';
   static const String brands = 'Brands';
@@ -50,6 +46,21 @@ class AppTexts {
   static const String skip = "Skip";
   static const String next = "Next";
   static const String getStarted = "Get Started";
+  static const String reserveTable = "Reserve Table";
+  static const String takeaway = "Take Away";
+  static const String takeawaySubtitle = "Order and pick up your food";
+  static const String dineIn = "Dine In";
+  static const String reservationSubtitle =
+      "Reserve your table and enjoy the ambience";
+  static const String confirmTakeaway = "Confirm Takeaway";
+  static const String ourServices = "Our Services";
+  static const String searchDishes = "Search by dishes...";
+  static const String todaysSpecial = "Today's Special";
+  static const String browseByCategory = "Browse by Category";
+  static const String viewOnMap = "View on Map";
+  static const String call = "Call";
+  static const String openNow = "Open Now";
+  static const String closed = "Closed";
 
   /// Login screen
   static const String loginSubTitle =
@@ -135,4 +146,16 @@ class StaticValues {
   static const String testLocation = 'Bettiah, Bihar, India';
   static const String testPhoneNumber = '+91 9876543210';
   static const String male = "Male";
+
+  /// Restaurant details
+  static Map<String, dynamic> restaurantDetails = {
+    "appName": "Velzaar",
+    "appSlogan": "A Grand Indian Experience",
+    "welcomeText": "Welcome to Velzaar",
+    "restaurantTitle": "Savor the Essence of India",
+    "branchName": "Velzaar Mithapur",
+    "address": "123 Royal Street, Mithapur, Gujarat",
+    "timing": "11:00 AM - 11:00 PM",
+    "isOpen": true,
+  };
 }

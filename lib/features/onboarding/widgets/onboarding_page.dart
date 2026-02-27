@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../common/styles/subtitle_text.dart';
 import '../../../utils/constants/colors.dart';
 import '../../../utils/device/device.utility.dart';
 import 'onboarding_gradient_overlay.dart';
@@ -82,15 +83,9 @@ class OnboardingPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 // Subtitle
-                Text(
-                  subtitle,
-                  style: TextStyle(
-                    color: Colors.white.withValues(alpha: 0.78),
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
-                    height: 1.6,
-                    letterSpacing: 0.1,
-                  ),
+                SubtitleText(
+                  text: subtitle,
+                  color: Colors.white.withValues(alpha: 0.78),
                 ),
               ],
             ),

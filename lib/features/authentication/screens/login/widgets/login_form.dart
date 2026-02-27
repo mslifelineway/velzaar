@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../../../bindings/routes/app_routes.dart';
 import '../../../../../common/widgets/button/elevated_button.dart';
-import '../../../../../navigation_menu.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/texts.dart';
 import 'login_remember_me.dart';
@@ -43,7 +43,8 @@ class LoginForm extends StatelessWidget {
 
         /// Sign In Button
         AppElevatedButton(
-          onPressed: () => Get.to(() => NavigationMenu()),
+          // onPressed: () => Get.to(() => NavigationMenu()),
+          onPressed: () => Get.offAllNamed(AppRoutes.home),
           child: Text(AppTexts.signIn),
         ),
       ],

@@ -12,13 +12,14 @@ class CustomTextButton extends StatelessWidget {
     this.rightIcon,
     this.textColor,
     this.borderRadius,
+    this.backgroundColor,
   });
 
   final String? text;
   final Widget? child;
   final VoidCallback? onPressed;
   final IconData? leftIcon, rightIcon;
-  final Color? textColor;
+  final Color? textColor, backgroundColor;
   final BorderRadiusGeometry? borderRadius;
 
   @override
@@ -28,7 +29,8 @@ class CustomTextButton extends StatelessWidget {
     return TextButton(
       onPressed: onPressed,
       style: TextButton.styleFrom(
-        backgroundColor: Colors.transparent, // 👈 No background
+        backgroundColor:
+            backgroundColor ?? Colors.transparent, // 👈 No background
         foregroundColor: color,
         padding: const EdgeInsets.symmetric(
           horizontal: AppSizes.md,
@@ -47,7 +49,7 @@ class CustomTextButton extends StatelessWidget {
             children: [
               if (leftIcon != null) ...[
                 Icon(leftIcon, size: AppSizes.iconSm),
-                const SizedBox(width: AppSizes.sm / 2),
+                const SizedBox(width: AppSizes.sm / 4),
               ],
               if (text != null)
                 Text(
@@ -58,7 +60,7 @@ class CustomTextButton extends StatelessWidget {
                   ),
                 ),
               if (rightIcon != null) ...[
-                const SizedBox(width: AppSizes.sm / 2),
+                const SizedBox(width: AppSizes.sm / 4),
                 Icon(rightIcon, size: AppSizes.iconSm),
               ],
             ],

@@ -4,6 +4,7 @@ import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/constants/texts.dart';
 import '../../../utils/device/device.utility.dart';
+import '../button/custom_text_button.dart';
 
 class SectionHeading extends StatelessWidget {
   const SectionHeading({
@@ -33,19 +34,21 @@ class SectionHeading extends StatelessWidget {
             title,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: Theme.of(context).textTheme.headlineSmall,
+            style: Theme.of(context).textTheme.titleLarge!.apply(
+              color: DeviceUtils.isDarkMode
+                  ? AppColors.light
+                  : AppColors.textHeading,
+            ),
           ),
+
           if (showAction)
-            TextButton(
+            CustomTextButton(
+              text: actionText,
               onPressed: onActionPressed,
-              child: Text(
-                actionText,
-                style: Theme.of(context).textTheme.labelSmall!.apply(
-                  color: DeviceUtils.isDarkMode
-                      ? AppColors.light
-                      : AppColors.dark.withValues(alpha: 0.6),
-                ),
-              ),
+              rightIcon: Icons.keyboard_arrow_right_outlined,
+              textColor: DeviceUtils.isDarkMode
+                  ? AppColors.light
+                  : AppColors.textHeading.withValues(alpha: 0.8),
             ),
         ],
       ),

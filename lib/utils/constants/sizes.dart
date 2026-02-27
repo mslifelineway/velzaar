@@ -24,7 +24,7 @@ class AppSizes {
   static const double btnWidth = 120.0;
   static const double btnRadius = 12.0;
   static const double btnElevation = 4.0;
-  static const double searchBarHeight = 48.0;
+  static const double searchBarHeight = 44.0;
 
   //AppBar Height
   static const double appBarHeight = 56.0;
@@ -77,6 +77,9 @@ class AppSizes {
 
   /// Home Screen
   static const double homeHeaderHeight = 320;
+  static const double homeCategoryChipImgWidth = 120;
+  static const double homeCategoryChipImgHeight = 80;
+  static const double homeCategoryChipHeight = homeCategoryChipImgHeight + 20;
 
   /// Store Screen
   static const double storeHeaderHeight = 170;

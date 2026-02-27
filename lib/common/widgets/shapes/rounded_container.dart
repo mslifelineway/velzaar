@@ -10,7 +10,7 @@ class RoundedContainer extends StatelessWidget {
     this.width,
     this.showBorder = false,
     this.radius = AppSizes.cardRadiusLg,
-    this.backgroundColor = AppColors.borderPrimary,
+    this.backgroundColor = AppColors.lightContainer,
     this.borderColor = AppColors.light,
     this.margin,
     this.padding,

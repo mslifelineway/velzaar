@@ -27,8 +27,8 @@ class SplashScreen extends GetView<SplashController> {
               const SizedBox(height: AppSizes.defaultSpace),
               FadeTransition(
                 opacity: controller.taglineOpacity,
-                child: const Text(
-                  AppTexts.appSlogan,
+                child: Text(
+                  StaticValues.restaurantDetails['appSlogan']!,
                   style: TextStyle(
                     color: AppColors.textAccent,
                     fontSize: 16,

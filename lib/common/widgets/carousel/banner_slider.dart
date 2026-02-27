@@ -4,17 +4,16 @@ import 'package:get/get.dart';
 
 import '../../../features/shop/controllers/banner_slider.controller.dart';
 import '../../../utils/constants/sizes.dart';
-import '../images/rounded_image.dart';
 import 'banner_slider_dot_navigation.dart';
 
 class BannerSlider extends StatelessWidget {
   const BannerSlider({
     super.key,
-    required this.bannerImages,
+    required this.slidingWidgets,
     this.initialPage = 0,
   });
 
-  final List<String> bannerImages;
+  final List<Widget> slidingWidgets;
   final int initialPage;
 
   @override
@@ -27,9 +26,7 @@ class BannerSlider extends StatelessWidget {
         /// Banners Carousel
         CarouselSlider(
           carouselController: sliderController.controller,
-          items: bannerImages
-              .map((imageUrl) => RoundedImage(imageUrl: imageUrl))
-              .toList(),
+          items: slidingWidgets,
           options: CarouselOptions(
             aspectRatio: 16 / 9,
             viewportFraction: 0.8,

@@ -6,10 +6,19 @@ class AppImages {
   static const String appIcon = "assets/app/app-icon.png";
   static const String appIconCircled = "assets/app/app-icon-circled.png";
 
+  /// --------------- RESTAURANT IMAGES -----------------
+  static const String dineIn = "assets/images/dine_in.png";
+  static const String takeAway = "assets/images/take_away.png";
+  static const String velzaarRestaurant =
+      "assets/images/velzaar_restaurant.png";
+
   ///-------- ONBOARDING IMAGES
   static const String onboarding1 = "assets/images/onboarding/onboarding_1.png";
   static const String onboarding2 = "assets/images/onboarding/onboarding_2.png";
   static const String onboarding3 = "assets/images/onboarding/onboarding_3.png";
+
+  ///----- TEMPORARY IMAGES --------------
+  static const tempDishImage = "assets/images/temp/dish.png";
 
   /// ----- BANNER
   static const String banner1 = "assets/banners/banner1.jpg";

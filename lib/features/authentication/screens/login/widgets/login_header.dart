@@ -13,7 +13,7 @@ class LoginHeader extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          AppTexts.appName,
+          StaticValues.restaurantDetails['appName']!,
           style: Theme.of(context).textTheme.headlineSmall,
         ),
         SizedBox(height: AppSizes.sm),

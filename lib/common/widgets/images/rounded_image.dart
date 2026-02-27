@@ -36,7 +36,7 @@ class RoundedImage extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: height,
-        width: width,
+        width: width ?? double.infinity,
         padding: padding,
         decoration: BoxDecoration(
           border: border,

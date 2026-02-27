@@ -19,6 +19,8 @@ class CustomButton extends StatelessWidget {
     this.isSmall = true,
     this.fontSize = AppSizes.fontSizeSm,
     this.fontWeight = FontWeight.w600,
+    this.borderWidth = 1.5,
+    this.padding,
   });
 
   final String? text;
@@ -28,8 +30,9 @@ class CustomButton extends StatelessWidget {
   final Color? backgroundColor, textColor;
   final BorderRadiusGeometry? borderRadius;
   final bool? noShadowColor, isSmall;
-  final double elevation, fontSize;
+  final double elevation, fontSize, borderWidth;
   final FontWeight fontWeight;
+  final EdgeInsetsGeometry? padding;
 
   @override
   Widget build(BuildContext context) {
@@ -40,9 +43,15 @@ class CustomButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: bgColor,
         foregroundColor: color,
-        padding: const EdgeInsets.symmetric(
-          horizontal: AppSizes.md,
-          vertical: AppSizes.sm,
+        padding:
+            padding ??
+            const EdgeInsets.symmetric(
+              horizontal: AppSizes.md,
+              vertical: AppSizes.sm,
+            ),
+        side: BorderSide(
+          color: bgColor, // 👈 outline color
+          width: borderWidth,
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppSizes.borderRadiusXl),
