@@ -80,6 +80,9 @@ class AppSizes {
   static const double homeCategoryChipImgWidth = 120;
   static const double homeCategoryChipImgHeight = 80;
   static const double homeCategoryChipHeight = homeCategoryChipImgHeight + 20;
+  static const double homeOurServiceImgWidth = 80;
+  static const double homeOurServiceImgHeight = 80;
+  static const double imageCardDefaultHeight = 160;
 
   /// Store Screen
   static const double storeHeaderHeight = 170;

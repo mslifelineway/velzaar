@@ -62,7 +62,7 @@ class CategoryChip extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: Theme.of(context).textTheme.labelLarge!.apply(
-                          color: AppColors.textHeading,
+                          color: AppColors.bgPrimary,
                         ),
                       ),
                     ),

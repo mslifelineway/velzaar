@@ -51,7 +51,7 @@ class LocationCard extends StatelessWidget {
           LocationTimingAndStatus(isOpen: isOpen, timing: timing),
 
           /// Action Buttons
-          const SizedBox(height: AppSizes.spaceBetweenItems),
+          const SizedBox(height: AppSizes.spaceBetweenSections),
           LocationActions(),
         ],
       ),

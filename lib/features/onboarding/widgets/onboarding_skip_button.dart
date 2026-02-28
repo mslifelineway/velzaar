@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../common/widgets/button/custom_text_button.dart';
-import '../../../utils/constants/colors.dart';
+import '../../../common/widgets/button/custom_button/custom_button.dart';
+import '../../../common/widgets/button/custom_button/button_type.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/constants/texts.dart';
 import '../onboarding_controller.dart';
@@ -20,12 +20,11 @@ class OnboardingSkipButton extends GetView<OnboardingController> {
             horizontal: AppSizes.md,
             vertical: AppSizes.sm,
           ),
-          child: CustomTextButton(
+          child: CustomButton(
             text: AppTexts.skip,
             onPressed: controller.skip,
-            // backgroundColor: AppColors.light.withValues(alpha: 0.8),
-            textColor: AppColors.primary,
             rightIcon: Icons.keyboard_double_arrow_right_outlined,
+            buttonType: ButtonType.text,
           ),
         ),
       ),

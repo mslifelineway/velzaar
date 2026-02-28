@@ -26,7 +26,7 @@ class TodaysSpecial extends StatelessWidget {
         SectionHeading(title: AppTexts.todaysSpecial),
 
         /// Banners
-        SizedBox(height: AppSizes.spaceBetweenItems),
+        SizedBox(height: AppSizes.spaceBetweenItems / 2),
         BannerSlider(
           slidingWidgets: todaysSpecials
               .map((special) => TodaysSpecialCard(item: special))

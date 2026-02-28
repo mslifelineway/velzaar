@@ -22,7 +22,7 @@ class LocationTimingAndStatus extends StatelessWidget {
         /// Open / Closed Status
         StatusChip(
           label: isOpen ? AppTexts.openNow : AppTexts.closed,
-          type: !isOpen ? ChipType.success : ChipType.error,
+          type: isOpen ? ChipType.success : ChipType.error,
         ),
 
         const SizedBox(width: AppSizes.spaceBetweenItems),

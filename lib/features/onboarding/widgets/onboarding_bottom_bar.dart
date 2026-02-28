@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../common/styles/gradients.dart';
-import '../../../common/widgets/button/custom_button.dart';
+import '../../../common/widgets/button/custom_button/custom_button.dart';
 import '../../../utils/constants/texts.dart';
 import '../onboarding_controller.dart';
 import 'onboarding_dot_indicator.dart';

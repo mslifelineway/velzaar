@@ -8,7 +8,7 @@ class AppImages {
 
   /// --------------- RESTAURANT IMAGES -----------------
   static const String dineIn = "assets/images/dine_in.png";
-  static const String takeAway = "assets/images/take_away.png";
+  static const String takeAway = "assets/images/takeaway.png";
   static const String velzaarRestaurant =
       "assets/images/velzaar_restaurant.png";
 

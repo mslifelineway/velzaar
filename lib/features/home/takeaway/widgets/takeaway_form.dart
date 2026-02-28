@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../common/styles/subtitle_text.dart';
-import '../../../../common/widgets/button/custom_button.dart';
+import '../../../../common/widgets/button/custom_button/custom_button.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/texts.dart';
 

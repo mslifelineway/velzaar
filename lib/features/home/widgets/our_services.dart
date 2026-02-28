@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../common/widgets/texts/section_heading.dart';
+import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
 import '../../../utils/constants/texts.dart';
 import '../dine_in/dine_in_screen.dart';
@@ -24,14 +25,14 @@ class OurServices extends StatelessWidget {
           children: [
             /// Dine In Service
             ServiceCard(
-              icon: Icons.restaurant,
+              image: AppImages.dineIn,
               title: AppTexts.dineIn,
               onTap: () => Get.to(() => DineInScreen()),
             ),
 
             /// Takeaway Service Card
             ServiceCard(
-              icon: Icons.takeout_dining,
+              image: AppImages.takeAway,
               title: AppTexts.takeaway,
               onTap: () => Get.to(() => TakeawayScreen()),
             ),

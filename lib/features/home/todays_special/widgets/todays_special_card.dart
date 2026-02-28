@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../../../../common/styles/gradients.dart';
+import '../../../../common/widgets/button/custom_button/custom_button.dart';
+import '../../../../common/widgets/button/custom_button/button_type.dart';
 import '../../../../common/widgets/cards/image_card.dart';
+import '../../../../utils/constants/sizes.dart';
 
 class TodaysSpecialCard extends StatelessWidget {
   final Map<String, dynamic> item;
@@ -14,15 +18,34 @@ class TodaysSpecialCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          gradient: LinearGradient(
-            colors: [Colors.black.withValues(alpha: 0.5), Colors.transparent],
+          gradient: Gradients.getGradient(
+            AlignmentGeometry.centerLeft,
+            AlignmentGeometry.centerRight,
           ),
         ),
         padding: const EdgeInsets.all(16),
-        alignment: Alignment.bottomLeft,
-        child: Text(
-          item['name'],
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        alignment: Alignment.centerRight,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            /// Special item name
+            Text(
+              item['name'],
+              style: TextStyle(
+                color: Colors.white70,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+
+            /// View button
+            SizedBox(height: AppSizes.spaceBetweenItems),
+            CustomButton(
+              text: "View",
+              rightIcon: Icons.keyboard_arrow_right_outlined,
+              buttonType: ButtonType.luxury,
+            ),
+          ],
         ),
       ),
     );

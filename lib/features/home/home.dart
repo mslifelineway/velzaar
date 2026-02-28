@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
             /// Header section
             HomeHeader(),
 
-            SizedBox(height: AppSizes.spaceBetweenItems),
+            SizedBox(height: AppSizes.spaceBetweenItems / 2),
             Padding(
               padding: EdgeInsetsGeometry.symmetric(
                 horizontal: AppSizes.defaultSpace,

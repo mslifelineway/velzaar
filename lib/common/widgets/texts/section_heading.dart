@@ -37,7 +37,7 @@ class SectionHeading extends StatelessWidget {
             style: Theme.of(context).textTheme.titleLarge!.apply(
               color: DeviceUtils.isDarkMode
                   ? AppColors.light
-                  : AppColors.textHeading,
+                  : AppColors.primary,
             ),
           ),
 
@@ -48,7 +48,7 @@ class SectionHeading extends StatelessWidget {
               rightIcon: Icons.keyboard_arrow_right_outlined,
               textColor: DeviceUtils.isDarkMode
                   ? AppColors.light
-                  : AppColors.textHeading.withValues(alpha: 0.8),
+                  : AppColors.primary.withValues(alpha: 0.8),
             ),
         ],
       ),
