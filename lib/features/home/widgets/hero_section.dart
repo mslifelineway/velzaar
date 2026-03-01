@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../common/styles/overlays/gradient_overlay.dart';
+import '../../../common/styles/overlays/overlay_util.dart';
 import '../../../common/widgets/animations/animated_reveal_container/animated_reveal_container.dart';
 import '../../../common/widgets/animations/animated_reveal_container/animated_reveal_controller.dart';
 import '../../../utils/constants/image_strings.dart';
@@ -15,18 +16,13 @@ class HeroSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.put(AnimatedRevealController());
 
-    return SizedBox(
-      height: 300,
-      child: Stack(
-        fit: StackFit.expand,
+    return GradientOverlay(
+      gradient: OverlayUtil.luxuryBanner(),
+      overlayAlignment: Alignment.bottomLeft,
+      overlayChild: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
         children: [
-          // ── Layer 1: Background Image ──────────────────────────────────────
-          Image.asset(AppImages.velzaarRestaurant, fit: BoxFit.cover),
-
-          // ── Layer 2: Gradient Overlay ──────────────────────────────────────
-          const GradientOverlay(),
-
-          // ── Layer 3: Animated Text Content ────────────────────────────────
           Padding(
             padding: EdgeInsetsGeometry.symmetric(
               horizontal: AppSizes.defaultSpace,
@@ -42,6 +38,7 @@ class HeroSection extends StatelessWidget {
           ),
         ],
       ),
+      child: Image.asset(AppImages.velzaarRestaurant, fit: BoxFit.cover),
     );
   }
 }
