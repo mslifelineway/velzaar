@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../common/widgets/chips/enums/status_chip_enum.dart';
 import '../../../../common/widgets/chips/status_chip.dart';
+import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/texts.dart';
 
@@ -30,7 +31,7 @@ class LocationTimingAndStatus extends StatelessWidget {
         /// Timing
         Text(
           timing,
-          style: const TextStyle(color: Color(0xFF6B7280), fontSize: 13),
+          style: const TextStyle(color: AppColors.charcoalGrey, fontSize: 13),
         ),
       ],
     );

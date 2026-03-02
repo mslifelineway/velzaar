@@ -27,7 +27,7 @@ import 'overlay_util.dart';
 class GradientOverlay extends StatelessWidget {
   const GradientOverlay({
     super.key,
-    required this.child,
+    this.child,
     this.direction = OverlayDirection.topToBottom,
     this.opacity = 0.65,
     this.color = Colors.black,
@@ -43,7 +43,7 @@ class GradientOverlay extends StatelessWidget {
   // ── Base layer ────────────────────────────────────────────────────────────
 
   /// The widget behind the overlay (image, card, container, etc.)
-  final Widget child;
+  final Widget? child;
 
   // ── Overlay gradient config ───────────────────────────────────────────────
 
@@ -103,7 +103,7 @@ class GradientOverlay extends StatelessWidget {
        fit: StackFit.expand,
       children: [
         // ── Layer 1: Base child ─────────────────────────────────────────────
-        child,
+        ?child,
 
         // ── Layer 2: Gradient wash ──────────────────────────────────────────
         Positioned.fill(

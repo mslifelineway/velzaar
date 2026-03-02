@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../utils/constants/colors.dart';
 import 'overlay_direction.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -75,7 +76,7 @@ abstract class OverlayUtil {
         direction: OverlayDirection.topToBottom,
         colors: [
           Colors.transparent,
-          const Color(0xFF1a0505).withValues(alpha: opacity),
+          AppColors.luxuryDark.withValues(alpha: opacity),
         ],
       );
 
@@ -84,7 +85,7 @@ abstract class OverlayUtil {
         direction: OverlayDirection.diagonalTlBr,
         colors: [
           Colors.transparent,
-          const Color(0xFF0D2B1F).withValues(alpha: opacity),
+          AppColors.overlayDark.withValues(alpha: opacity),
         ],
       );
 

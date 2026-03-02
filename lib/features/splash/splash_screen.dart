@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../common/styles/gradients.dart';
 import '../../utils/constants/colors.dart';
 import 'controller/splash_controller.dart';
 import '../../common/widgets/shapes/gradient_container.dart';
@@ -16,6 +17,7 @@ class SplashScreen extends GetView<SplashController> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: GradientContainer(
+        gradient: AppGradients.gradientDark,
         child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,

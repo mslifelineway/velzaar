@@ -25,8 +25,8 @@ class GradientContainer extends StatelessWidget {
         gradient:
             gradient ??
             (DeviceUtils.isDarkMode
-                ? Gradients.gradientDark
-                : Gradients.gradientLight),
+                ? AppGradients.gradientDark
+                : AppGradients.gradientLight),
       ),
       child: child,
     );

@@ -18,7 +18,7 @@ class TodaysSpecialCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          gradient: Gradients.getGradient(
+          gradient: AppGradients.getGradient(
             AlignmentGeometry.centerLeft,
             AlignmentGeometry.centerRight,
           ),

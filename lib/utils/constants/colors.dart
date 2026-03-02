@@ -126,4 +126,36 @@ class AppColors {
   // =========================================================
   static const Color cardLight = Color(0xFFFFFFFF);
   static const Color cardDark = Color(0xFF5A1420);
+
+  // =========================================================
+  // GRADIENT-SPECIFIC COLORS
+  // — Additional tokens needed for gradient and overlay definitions —
+  // =========================================================
+
+  /// Dark overlay for luxury banners — branded dark tone
+  static const Color luxuryDark = Color(0xFF1a0505);
+
+  /// Darker bottom tone for header gradients
+  static const Color darkHeaderDark = Color(0xFF3d0e0e);
+
+  /// Darker green for success button gradient depth
+  static const Color successDark = Color(0xFF1B5E20);
+
+  /// Darker red for danger button gradient depth
+  static const Color dangerDark = Color(0xFF8B0000);
+
+  /// Darker forest tone for dine-in overlays
+  static const Color overlayDark = Color(0xFF0D2B1F);
+
+  /// Image scrim gradient colors — top (lighter)
+  static const Color imageScrimTop = Color(0xFF000000);
+
+  /// Image scrim gradient colors — bottom (darker)
+  static const Color imageScrimBottom = Color(0xFF000000);
+
+  /// Luxury gradient mid-tone — rich burnished gold
+  static const Color luxuryMid = Color(0xFFC49020);
+
+  /// Luxury gradient shadow — deep warm bronze
+  static const Color luxuryShadow = Color(0xFF7A5B0A);
 }

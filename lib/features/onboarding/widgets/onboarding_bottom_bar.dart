@@ -14,7 +14,7 @@ class OnboardingBottomBar extends GetView<OnboardingController> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(gradient: Gradients.frostedDarkGradient),
+      decoration: BoxDecoration(gradient: AppGradients.frostedDarkGradient),
       padding: EdgeInsets.only(
         left: 28,
         right: 28,

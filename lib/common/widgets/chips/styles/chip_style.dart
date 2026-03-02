@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../utils/constants/colors.dart';
 import '../enums/status_chip_enum.dart';
 
 class ChipStyle {
@@ -19,41 +20,41 @@ class ChipStyle {
     switch (type) {
       case ChipType.success:
         return ChipStyle(
-          backgroundColor: const Color(0xFF1B4332).withValues(alpha: 0.10),
-          borderColor: const Color(0xFF1B4332),
-          textColor: const Color(0xFF1B4332),
+          backgroundColor: AppColors.success.withValues(alpha: 0.10),
+          borderColor: AppColors.success,
+          textColor: AppColors.success,
           icon: Icons.check_circle,
         );
 
       case ChipType.info:
         return ChipStyle(
-          backgroundColor: Colors.blue.withValues(alpha: 0.10),
-          borderColor: Colors.blue,
-          textColor: Colors.blue,
+          backgroundColor: AppColors.info.withValues(alpha: 0.10),
+          borderColor: AppColors.info,
+          textColor: AppColors.info,
           icon: Icons.info,
         );
 
       case ChipType.warning:
         return ChipStyle(
-          backgroundColor: Colors.orange.withValues(alpha: 0.12),
-          borderColor: Colors.orange,
-          textColor: Colors.orange.shade800,
+          backgroundColor: AppColors.warning.withValues(alpha: 0.12),
+          borderColor: AppColors.warning,
+          textColor: AppColors.warning,
           icon: Icons.warning_amber_rounded,
         );
 
       case ChipType.error:
         return ChipStyle(
-          backgroundColor: Colors.red.withValues(alpha: 0.10),
-          borderColor: Colors.red,
-          textColor: Colors.red,
+          backgroundColor: AppColors.error.withValues(alpha: 0.10),
+          borderColor: AppColors.error,
+          textColor: AppColors.error,
           icon: Icons.error,
         );
 
       default:
         return ChipStyle(
-          backgroundColor: Colors.grey.withValues(alpha: 0.08),
-          borderColor: Colors.grey.shade400,
-          textColor: Colors.grey.shade700,
+          backgroundColor: AppColors.grey.withValues(alpha: 0.08),
+          borderColor: AppColors.charcoalGreyLight,
+          textColor: AppColors.charcoalGrey,
           icon: Icons.circle,
         );
     }

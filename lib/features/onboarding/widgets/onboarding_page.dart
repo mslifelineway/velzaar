@@ -37,7 +37,7 @@ class OnboardingPage extends StatelessWidget {
           height: size.height,
           // Show a warm placeholder while asset loads
           errorBuilder: (_, __, ___) =>
-              Container(color: const Color(0xFF1a0505)),
+              Container(color: AppColors.luxuryDark),
         ),
 
         // ── Gradient Overlay ─────────────────────────────────────────────────

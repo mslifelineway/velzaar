@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
-class AppColors {
-  AppColors._();
+class AppColors1 {
+  AppColors1._();
 
   // =========================================================
   // BRAND COLORS (VELZAAR LUXURY PALETTE)

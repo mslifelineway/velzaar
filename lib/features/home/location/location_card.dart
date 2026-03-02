@@ -41,7 +41,7 @@ class LocationCard extends StatelessWidget {
           Text(
             address,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              color: const Color(0xFF6B7280),
+              color: AppColors.charcoalGrey,
               height: 1.5,
             ),
           ),

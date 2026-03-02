@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../utils/constants/colors.dart';
 
-class Gradients {
-  Gradients._();
+// ─────────────────────────────────────────────────────────────────────────────
+// APP GRADIENTS
+// ─────────────────────────────────────────────────────────────────────────────
+abstract class AppGradients {
+  AppGradients._();
 
   static final LinearGradient primaryGradientBg = LinearGradient(
     colors: [
@@ -23,13 +26,10 @@ class Gradients {
     end: Alignment.bottomCenter,
   );
 
-  // =========================================================
-  // GRADIENT COLORS (Luxury Gold Blend)
-  // =========================================================
   static final LinearGradient gradientLight = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [AppColors.accent, AppColors.textAccent],
+    colors: [AppColors.luxuryMid, AppColors.textAccent],
   );
 
   // ============================================
@@ -38,7 +38,7 @@ class Gradients {
   static final LinearGradient frostedDarkGradient = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
-    colors: [Colors.transparent, Colors.black.withValues(alpha: 0.55)],
+    colors: [Colors.transparent, AppColors.black.withValues(alpha: 0.55)],
   );
 
   static LinearGradient getGradient(
@@ -52,27 +52,22 @@ class Gradients {
       colors:
           colors ??
           [
-            Colors.black.withValues(alpha: 0.4),
-            Colors.black.withValues(alpha: 8),
+            AppColors.black.withValues(alpha: 0.4),
+            AppColors.black.withValues(alpha: 0.8),
           ],
     );
   }
-}
 
-// ─────────────────────────────────────────────────────────────────────────────
-// APP GRADIENTS
-// ─────────────────────────────────────────────────────────────────────────────
-abstract class AppGradients {
-  /// Luxury button gradient — Option D
+  /// Luxury button gradient — gold branded gradient
   /// Used by: LuxuryButton, luxury banners, premium badges
   static const LinearGradient luxury = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
     stops: [0.0, 0.35, 1.0],
     colors: [
-      Color(0xFFD9AC45), // Warm bright gold    — top-left highlight
-      Color(0xFFC49020), // Rich burnished gold  — mid body
-      Color(0xFF7A5B0A), // Deep warm bronze     — bottom-right shadow
+      AppColors.btnLuxury, // Warm bright gold — top-left highlight
+      AppColors.luxuryMid, // Rich burnished gold — mid body
+      AppColors.luxuryShadow, // Deep warm bronze — bottom-right shadow
     ],
   );
 
@@ -80,23 +75,63 @@ abstract class AppGradients {
   static const LinearGradient dineIn = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [Color(0xFF1B4332), Color(0xFF0D2B1F)],
+    colors: [AppColors.dineIn, AppColors.overlayDark],
   );
 
   /// Dark header gradient — hero section, onboarding bg
   static const LinearGradient darkHeader = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
-    colors: [Color(0xFF1a0505), Color(0xFF3d0e0e)],
+    colors: [AppColors.luxuryDark, AppColors.darkHeaderDark],
   );
 
   /// Image overlay gradient — fades image to dark for text readability
-  static LinearGradient imageOverlay = LinearGradient(
+  static const LinearGradient imageScrim = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
+    colors: [AppColors.black, AppColors.black],
+  );
+
+  /// Image overlay gradient (kept for backward compatibility)
+  static LinearGradient get imageOverlay => const LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [AppColors.black, AppColors.black],
+  );
+
+  /// Danger button gradient — deep red for destructive actions
+  static const LinearGradient danger = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [AppColors.btnDanger, AppColors.dangerDark],
+  );
+
+  /// Success button gradient — green for positive confirmations
+  static const LinearGradient success = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [AppColors.btnSuccess, AppColors.successDark],
+  );
+
+  /// Primary button gradient — burgundy depth gradient
+  static const LinearGradient primary = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [AppColors.primaryLight, AppColors.primary, AppColors.primaryDark],
+  );
+
+  /// Onboarding screen gradients
+  static final LinearGradient onboardingGradient = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    stops: [0.0, 0.35, 0.65, 1.0],
     colors: [
-      Colors.black.withValues(alpha: 0.08),
-      Colors.black.withValues(alpha: 0.88),
+      Colors.black.withValues(alpha: 0.08), // Very light at top
+      Colors.black.withValues(alpha: 0.10), // Still light in middle
+      Colors.black.withValues(alpha: 0.55), // Gets darker
+      Colors.black.withValues(
+        alpha: 0.88,
+      ), // Almost solid Dark at bottom for text
     ],
   );
 }

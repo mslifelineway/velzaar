@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../utils/constants/colors.dart';
+import '../../../styles/gradients.dart';
 import 'button_type.dart';
 
 class ButtonUtil {
@@ -74,52 +75,21 @@ class ButtonUtil {
 
   static LinearGradient getGradient(ButtonType type, Color bgColor) {
     switch (type) {
-      // Luxury — branded gold gradient (Option D)
+      // Luxury — branded gold gradient
       case ButtonType.luxury:
-        return const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          stops: [0.0, 0.35, 1.0],
-          colors: [
-            Color(0xFFD9AC45), // Warm bright gold    — top-left highlight
-            Color(0xFFC49020), // Rich burnished gold  — mid body
-            Color(0xFF7A5B0A), // Deep warm bronze     — bottom-right shadow
-          ],
-        );
+        return AppGradients.luxury;
 
-      // Primary — subtle depth on burgundy
+      // Primary — burgundy depth gradient
       case ButtonType.primary:
-        return LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            AppColors.primaryLight, // brighter top
-            AppColors.primary, // base mid
-            AppColors.primaryDark, // deeper bottom
-          ],
-        );
+        return AppGradients.primary;
 
-      // Success — forest green depth
+      // Success — forest green depth gradient
       case ButtonType.success:
-        return LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            AppColors.btnSuccess,
-            Color(0xFF1B5E20), // darker green
-          ],
-        );
+        return AppGradients.success;
 
-      // Danger — deep red depth
+      // Danger — deep red gradient
       case ButtonType.danger:
-        return LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            AppColors.btnDanger,
-            Color(0xFF8B0000), // darker red
-          ],
-        );
+        return AppGradients.danger;
 
       // Secondary, outline, text, dineIn, and any future type
       // → flat gradient so the button color is always correct
